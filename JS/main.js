@@ -12,7 +12,7 @@ var val123 = 1;
     if (sessionStorage.kategori == NaN) {
       sessionStorage.kategori = 1
     }
-    else if (sessionStorage.kategori == 2) {
+    if (sessionStorage.kategori == 2) {
       var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item'
       });
@@ -307,7 +307,6 @@ var val123 = 1;
 
   $("#btn-kategori-1").click(function () {
     sessionStorage.setItem('kategori', 1);
-    alert('heyyy');
   });
 
   $("#btn-kategori-2").click(function () {
