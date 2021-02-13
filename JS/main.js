@@ -274,12 +274,7 @@ var val123 = 1;
   // Portfolio details carousel
 
 
-  // jQuery counterUp
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 2000
 
-  });
 
   //Init AOS
   function aos_init() {
