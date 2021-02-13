@@ -12,14 +12,9 @@ var val123 = 1;
 
   // Preloader
   $(window).on('load', function () {
-    if ($('#preloader').length) {
-      $('#preloader').delay(20).fadeOut('fast', function () {
         if (sessionStorage.kategori == NaN) {
           sessionStorage.kategori = 1
-        };
-        $(this).remove();
-      });
-    }
+        }
   });
 
  
@@ -332,6 +327,7 @@ var val123 = 1;
 
   $("#btn-kategori-1").click(function () {
     sessionStorage.setItem('kategori', 1);
+    alert('heyyy');
   });
 
   $("#btn-kategori-2").click(function () {
