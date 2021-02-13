@@ -12,9 +12,14 @@ var val123 = 1;
 
   // Preloader
   $(window).on('load', function () {
+    if ($('#preloader').length) {
+      $('#preloader').delay(20).fadeOut('fast', function () {
         if (sessionStorage.kategori == NaN) {
           sessionStorage.kategori = 1
-        }
+        };
+        $(this).remove();
+      });
+    }
   });
 
  
