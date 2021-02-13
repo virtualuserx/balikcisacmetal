@@ -272,12 +272,7 @@ var val123 = 1;
   });
 
   // Portfolio details carousel
-  $(".portfolio-details-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
+
 
   // jQuery counterUp
   $('[data-toggle="counter-up"]').counterUp({
