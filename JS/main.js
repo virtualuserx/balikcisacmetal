@@ -307,13 +307,19 @@ var val123 = 1;
 
   $("#btn-kategori-1").click(function () {
     sessionStorage.setItem('kategori', 1);
+    $("#portfolio-flters li").removeClass('filter-active');
+      $("#kategori1").addClass('filter-active');
   });
 
   $("#btn-kategori-2").click(function () {
     sessionStorage.setItem('kategori', 2);
+    $("#portfolio-flters li").removeClass('filter-active');
+      $("#kategori2").addClass('filter-active');
   });
   $("#btn-kategori-3").click(function () {
     sessionStorage.setItem('kategori', 3);
+    $("#portfolio-flters li").removeClass('filter-active');
+      $("#kategori3").addClass('filter-active');
   });
 
 
