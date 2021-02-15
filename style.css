@@ -31,7 +31,7 @@ body {
   # Preloader
   --------------------------------------------------------------*/
   #preloader {
-    background: url('images/loading.gif') no-repeat center center;
+    /* background: url('images/logometal.jpeg') no-repeat center center; */
     position: absolute;
     top: 0;
     left: 0;
@@ -88,7 +88,7 @@ body {
   #topbar {
     /* background: #106eea; */
     /* background:#B4B4B1; */
-    background: black;
+    background: rgba(0,158,232,255);
     height: 40px;
     font-size: 14px;
     transition: all 0.5s;
@@ -135,7 +135,7 @@ body {
   --------------------------------------------------------------*/
   #header {
     /* background: #ffff; */
-    background: transparent;
+    background: #fff;
     transition: all 0.5s;
     z-index: 997;
     padding: 25px 0;
@@ -170,8 +170,7 @@ body {
   }
 
   #header .logo img {
-    max-height: 60px;
-    border-radius: 50%;
+    max-height: 50px;
   }
 
   @media (max-width: 992px) {
