@@ -878,7 +878,6 @@ section {
   }
 
   .section-bg {
-    background-color: #f6f9fe;
   }
 
   .section-title {
@@ -912,6 +911,7 @@ section {
   .section-title p {
     margin: 15px auto 0 auto;
     font-weight: 600;
+    color: whitesmoke;
   }
 
   @media (min-width: 1024px) {
@@ -1178,12 +1178,7 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  padding: 70px 0 60px;
-  background: url("images/02.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit:cover;
+  padding-bottom: 20px !important;
 }
 
 .counts .count-box {
@@ -1191,7 +1186,8 @@ section {
   width: 100%;
   position: relative;
   text-align: center;
-  background: #f1f6fe;
+  color: black !important;
+  
 }
 
 .counts .count-box i {
@@ -1212,14 +1208,14 @@ section {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: #062b5b;
+  color: rgb(252, 129, 129);
 }
 
 .counts .count-box p {
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media (max-width: 500px) {
@@ -1237,6 +1233,14 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+#portfolio{
+  background-image: url("images/urun12.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit:cover;
+}
+
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 15px auto;
@@ -1588,7 +1592,6 @@ section {
   text-align: center;
   width: 100%;
   position: relative;
-  margin-top: 30px;
 }
 
 #footer .footer-newsletter {
@@ -1934,12 +1937,8 @@ section {
 .faq {
   margin-top: 50px;
   padding: 60px 0;
-  background: url("images/urun12.jpg")center center;
   height: 300px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit:cover;
+  
 }
 .faq h1{
   color: white;
