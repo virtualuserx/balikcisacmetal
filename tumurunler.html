@@ -12,9 +12,6 @@
     <link href="images/circle-logo.png" rel="icon">
     <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
   
-    <!-- iconfont -->
-    <!-- <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css"> -->
-    <link rel="stylesheet" href="https://allyoucan.cloud/cdn/icofont/1.0.1/icofont.css">
   
   
   
@@ -23,26 +20,13 @@
   
   
     <!-- font awsome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
   
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   
     <!-- Template Main CSS File -->
     <link href="style.css" rel="stylesheet">
-  
-    <!-- boxicon -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-  
-    <!-- vegas css file -->
-    <!-- <link rel="stylesheet" href="css/vegas.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.css" integrity="sha512-EpEnw81J0OHvzW6IJBk6U57oNffOy3voB5MasxdZTB2B6st6qEL38R/gVWYc7wMOcgqb3de8Vs6iqZkSlTHlEg==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.css" integrity="sha512-fSKum0u74TzF+eAXxBS0oIp3LlON1gd++1rifA0ZnQWKP2JXbCdomS2k0BDEM7v0se7mQOpOwedRw/lRsSPAaA==" crossorigin="anonymous" />
-    <style>
-      .vegas-timer-progress {
-        background: red;
-      }
-    </style>
   
   
     <!-- venobox css -->
@@ -54,13 +38,7 @@
     
     <!-- carousell -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.css" integrity="sha512-riTSV+/RKaiReucjeDW+Id3WlRLVZlTKAJJOHejihLiYHdGaHV7lxWaCfAvUR0ErLYvxTePZpuKZbrTbwpyG9w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA==" crossorigin="anonymous" />
-     
-  
+
 
 </head>
 <body>
@@ -91,14 +69,39 @@
         <ul>
           <li><a href="index.html">AnaSayfa</a></li>
           <li><a href="hakkimizda.html">Hakkımızda</a></li>
-          <li class="drop-down active"><a href="#portfolio">Ürünlerimiz
+          <li class="drop-down drop active"><a href="#portfolio">Paslanmaz Ürünlerimiz
             <i class="fas fa-chevron-circle-down"></i>
           </a>
             <ul id="urunlerli">
               <li><a id="btn-kategori-1" href="tumurunler.html#portfolio">Tüm Ürünlerimiz</a></li>
 
-              <li data-filter=".filter-app"><a id="btn-kategori-2" href="#portfolio"  >Yası Ürünler</a></li>
-              <li data-filter=".filter-card"><a id="btn-kategori-3" href="#portfolio">Yasmayan Ürünler</a></li>
+              <li data-filter=".filter-app" class="drop-down">
+                <a id="btn-kategori-2" href="#portfolio"  >Paslanmaz Çelik Rulo</a>
+                <ul>
+                  <li><a href="#">Rulo</a></li>
+                  <li><a href="#">Dar Rulo</a></li>
+                  <li><a href="#">Şerit Rulo</a></li>
+                </ul>
+              </li>
+              <li data-filter=".filter-app" class="drop-down">
+                <a id="btn-kategori-2" href="#portfolio"  >Paslanmaz Çelik Plaka</a>
+                <ul>
+                  <li><a href="#">Ostenitli</a></li>
+                  <li><a href="#">Ferritik</a></li>
+                  <li><a href="#">Duplex</a></li>
+                </ul>
+              </li>
+              <li data-filter=".filter-app" class="drop-down">
+                <a id="btn-kategori-2" href="#portfolio"  >Paslanmaz Boru/Profil/Çubuk</a>
+                <ul>
+                  <li><a href="#">Boru</a></li>
+                  <li><a href="#">Profil</a></li>
+                  <li><a href="#">Çubuk</a></li>
+                </ul>
+              </li>
+              <li data-filter=".filter-app">
+                <a id="btn-kategori-2" href="#portfolio"  >Dekoratif Paslanmaz Plaka</a>
+              </li>
             </ul>
           </li>
           <li><a href="metalservis.html">Metal servisi</a></li>
@@ -130,15 +133,28 @@
   
 
   <!-- ======= products Section ======= -->
-  <section id="portfolio" class="portfolio" style="margin-top: 0 i !important ; padding-top: 20px !important;">
+  <section id="portfolio" class="portfolio" style="margin-top: 0 i !important ; padding-top: 20px !important; background-image: none;">
     <div class="container" data-aos="fade-up">
 
       <div class="row" >
         <div class="col-lg-12 d-flex justify-content-center">
           <ul id="portfolio-flters">
-            <li id="kategori1" data-filter="*" class="filter-active">Tüm</li>
-            <li id="kategori2" data-filter=".filter-app">Yası</li>
-            <li id="kategori3" data-filter=".filter-card">Yasmayan</li>
+            <li id="kategori1" data-filter="*" class="filter-active">Tümü</li>
+            <li id="kategori2" >Çelik Rulo</li>
+            <li id="kategori3" >Çelik Plaka</li>
+            <li id="kategori3" >Boru/ Profil/ Çubuk</li>
+            <li id="kategori3" data-filter=".filter-card">Dekoratif Plaka</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" >
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters" class="portfolio-filters-alt">
+            <li id="kategori2" data-filter=".filter-app">Element 1</li>
+            <li id="kategori3" data-filter=".filter-card">Element 2</li>
+            <li id="kategori3" data-filter=".filter-card">Element 3</li>
+
           </ul>
         </div>
       </div>
@@ -150,8 +166,9 @@
           <div class="portfolio-info">
             <h4>urun 1</h4>
             <p>metal</p>
-            <a href="images/urun6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="urun1"><i class="bx bx-plus"></i></a>
-            <a href="urunler/urun1.html" class="details-link" title="ürün detayları"><i class="bx bx-link"></i></a>
+            <a href="images/urun6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="urun1"><i class="fas fa-plus"></i></a>
+            <a href="urunler/urun1.html" class="details-link" title="ürün detayları"><i
+              class="fas fa-external-link-alt"></i></i></a>
           </div>
         </div>
 
@@ -160,8 +177,9 @@
           <div class="portfolio-info">
             <h4>kategori 3</h4>
             <p>metal </p>
-            <a href="images/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="urun 3"><i class="bx bx-plus"></i></a>
-            <a href="urunler/urun1.html" class="details-link" title="urun detayı"><i class="bx bx-link"></i></a>
+            <a href="images/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="urun 3"><i class="fas fa-plus"></i></a>
+            <a href="urunler/urun1.html" class="details-link" title="urun detayı"><i
+              class="fas fa-external-link-alt"></i></a>
           </div>
         </div>
 
@@ -170,8 +188,9 @@
           <div class="portfolio-info">
             <h4>kategori 2</h4>
             <p>metal</p>
-            <a href="images/urun2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="urun 2"><i class="bx bx-plus"></i></a>
-            <a href="urunler/urun1.html" class="details-link" title="urun detayık"><i class="bx bx-link"></i></a>
+            <a href="images/urun2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="urun 2"><i class="fas fa-plus"></i></a>
+            <a href="urunler/urun1.html" class="details-link" title="urun detayık"><i
+              class="fas fa-external-link-alt"></i></a>
           </div>
         </div>
 
@@ -180,8 +199,9 @@
           <div class="portfolio-info">
             <h4>kategori 2</h4>
             <p>çelik</p>
-            <a href="images/urun7.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="urun 2"><i class="bx bx-plus"></i></a>
-            <a href="urundetaylari.html" class="details-link" title="ürün inceleyin"><i class="bx bx-link"></i></a>
+            <a href="images/urun7.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="urun 2"><i class="fas fa-plus"></i></a>
+            <a href="urundetaylari.html" class="details-link" title="ürün inceleyin"><i
+              class="fas fa-external-link-alt"></i></a>
           </div>
         </div>
 
@@ -190,8 +210,9 @@
           <div class="portfolio-info">
             <h4>kategori 2</h4>
             <p>metal</p>
-            <a href="images/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="urun 2"><i class="bx bx-plus"></i></a>
-            <a href="urunler/urun1.html" class="details-link" title="urun detayı"><i class="bx bx-link"></i></a>
+            <a href="images/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="urun 2"><i class="fas fa-plus"></i></a>
+            <a href="urunler/urun1.html" class="details-link" title="urun detayı"><i
+              class="fas fa-external-link-alt"></i></a>
           </div>
         </div> 
 
@@ -200,8 +221,9 @@
           <div class="portfolio-info">
             <h4>kategori 3</h4>
             <p>metal</p>
-            <a href="images/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="urun 3"><i class="bx bx-plus"></i></a>
-            <a href="urunler/urun1.html" class="details-link" title="urun inceleyin"><i class="bx bx-link"></i></a>
+            <a href="images/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="urun 3"><i class="fas fa-plus"></i></a>
+            <a href="urunler/urun1.html" class="details-link" title="urun inceleyin"><i
+              class="fas fa-external-link-alt"></i></a>
           </div>
         </div>
 
@@ -210,8 +232,9 @@
           <div class="portfolio-info">
             <h4>kategori 1</h4>
             <p>metal</p>
-            <a href="images/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="urun 1"><i class="bx bx-plus"></i></a>
-            <a href="urunler/urun1.html" class="details-link" title="ürün inceleyin"><i class="bx bx-link"></i></a>
+            <a href="images/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="urun 1"><i class="fas fa-plus"></i></a>
+            <a href="urunler/urun1.html" class="details-link" title="ürün inceleyin"><i
+              class="fas fa-external-link-alt"></i></a>
           </div>
         </div>
 
@@ -220,8 +243,9 @@
           <div class="portfolio-info">
             <h4>kategori 3</h4>
             <p>metal</p>
-            <a href="images/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="urun 3"><i class="bx bx-plus"></i></a>
-            <a href="urunler/urun1.html" class="details-link" title="ürün inceleyin"><i class="bx bx-link"></i></a>
+            <a href="images/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="urun 3"><i class="fas fa-plus"></i></a>
+            <a href="urunler/urun1.html" class="details-link" title="ürün inceleyin"><i
+              class="fas fa-external-link-alt"></i></a>
           </div>
         </div>
 
@@ -230,8 +254,9 @@
           <div class="portfolio-info">
             <h4>kategori 3</h4>
             <p>metal</p>
-            <a href="images/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="urun 3"><i class="bx bx-plus"></i></a>
-            <a href="urunler/urun1.html" class="details-link" title="urun inceleyin"><i class="bx bx-link"></i></a>
+            <a href="images/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="urun 3"><i class="fas fa-plus"></i></a>
+            <a href="urunler/urun1.html" class="details-link" title="urun inceleyin"><i
+              class="fas fa-external-link-alt"></i></a>
           </div>
         </div> 
 
@@ -327,31 +352,19 @@
 
     
     <!-- venobox js -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.2/venobox.min.js" integrity="sha512-RTKtgpCMMgKKvDrJsyt5wdzR2IjHJiz/b2rsyBgm8qNeB3KPNdCvWkh9ytMcdAwu9qq8OX2fvy5wTyyA8sqXZw==" crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.2/venobox.js" integrity="sha512-GmeWywuYJvHv48sXNfy+9lsLQGwo8BAzNvtqPTE5lKuqXNO1U1oR8IP+jctOWVRlrfXRjxUPRKyMsO1cnOqrSw==" crossorigin="anonymous"></script>
 
-     <!-- counter up -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g==" crossorigin="anonymous"></script>
-      <!-- Carousel-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"></script>
   
   <!-- aos -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
 
 
 <!-- isotope -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js" integrity="sha512-E/yP5UiPXb6VelX+dFLuUD+1IZw/Kz7tMncFTYbtoNSCdRZPFoGN3jZ2p27VUxHEkhbPiLuZhZpVEXxk9wAHCQ==" crossorigin="anonymous"></script>
-     <!-- plugin js -->
-     <!-- <script src="js/plugins.js"></script> -->
+
 <!-- bootstrap js -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-     <!-- vegas cdn -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.js" integrity="sha512-lYAcY5E6LZVeNB3Pky37SxbYKzo8A68MzKFoPg5oTuolhRm36D+YRvkrAQS4JuKsaGYeJ5KA5taMEtpNlPUeOA==" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.js" integrity="sha512-8b0Npb1J3g9Ouc4btqH5lyjwRXdVD6iWMQJTTVeFRzaSA930H6FmeL46AI+YfKYXS5wDQhQqbKAL7+u/jzS4jw==" crossorigin="anonymous"></script>
-
+    
      <!-- main js part -->
      <script src="JS/main.js"></script>
 

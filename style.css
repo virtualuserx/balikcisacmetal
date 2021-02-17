@@ -280,33 +280,32 @@ body {
   }
 
   .nav-menu .drop-down > a:after {
-    /* content: " "; */
-    font-family: IcoFont;
     padding-left: 5px;
   }
 
-  /* .nav-menu .drop-down .drop-down ul {
+  .nav-menu .drop-down .drop-down ul {
     top: 0;
     left: calc(100% - 30px);
-  } */
+  }
 
-  /* .nav-menu .drop-down .drop-down:hover > ul {
+  .nav-menu .drop-down .drop-down:hover > ul {
     opacity: 1;
     top: 0;
     left: 100%;
-  } */
+  }
 
-  /* .nav-menu .drop-down .drop-down > a {
+  .nav-menu .drop-down .drop-down > a {
     padding-right: 35px;
   }
-   */
-  /* .nav-menu .drop-down .drop-down > a:after { */
-    /* content: " "; */
-    /* font-family: IcoFont;
+  
+  .nav-menu .drop-down .drop-down > a:after { 
+    content: " > "; 
+
+    
     position: absolute;
     right: 15px;
   }
-   */
+  
   @media (max-width: 1366px) {
     .nav-menu .drop-down .drop-down ul {
       left: -90%;
