@@ -9,7 +9,6 @@ var val123 = 1;
  
 
   $(window).on('load', function () {
-
     if (sessionStorage.kategori == NaN) {
       sessionStorage.kategori = 1
     }
@@ -42,44 +41,6 @@ var val123 = 1;
 
       portfolioIsotope.isotope({
         filter: $("#kategori3").data('filter')
-      });
-      aos_init();
-
-
-      // Initiate venobox (lightbox feature used in portofilo)
-      $(document).ready(function () {
-        $('.venobox').venobox();
-      });
-    }
-    else if (sessionStorage.kategori == 4) {
-      var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item'
-      });
-
-      $("#portfolio-flters li").removeClass('filter-active');
-      $("#kategori4").addClass('filter-active');
-
-      portfolioIsotope.isotope({
-        filter: $("#kategori4").data('filter')
-      });
-      aos_init();
-
-
-      // Initiate venobox (lightbox feature used in portofilo)
-      $(document).ready(function () {
-        $('.venobox').venobox();
-      });
-    }
-    else if (sessionStorage.kategori == 5) {
-      var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item'
-      });
-
-      $("#portfolio-flters li").removeClass('filter-active');
-      $("#kategori5").addClass('filter-active');
-
-      portfolioIsotope.isotope({
-        filter: $("#kategori5").data('filter')
       });
       aos_init();
 
@@ -311,11 +272,41 @@ var val123 = 1;
   });
 
   // Portfolio details carousel
-
-
-
-
   //sa
+
+  $(".testimonials-carousel").owlCarousel({
+    autoplay: true,
+     dots: true,
+     center: true,
+    loop: true,
+
+    responsive : {
+      // breakpoint from 0 up
+      0 : {
+        stagePadding: 0,
+        loop: true,
+        responsiveClass: true,
+        dots: false,
+        nav: true,
+        autoHeight: true,
+        //vertical:true,
+        items: 1
+      },
+      // breakpoint from 992 up
+      992 : {
+        items: 3,
+        //autoplayHoverPause:true
+      }
+    }
+    
+   //items: 3
+  });
+
+  // jQuery counterUp
+  $('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 1000
+  });
 
   //Init AOS
   function aos_init() {
@@ -344,34 +335,269 @@ var val123 = 1;
     return false;
   });
 
-  $(".btn-kategori-1").click(function () {
+  $("#btn-kategori-1").click(function () {
     sessionStorage.setItem('kategori', 1);
     $("#portfolio-flters li").removeClass('filter-active');
       $("#kategori1").addClass('filter-active');
   });
 
-  $(".btn-kategori-2").click(function () {
+  $("#btn-kategori-2").click(function () {
     sessionStorage.setItem('kategori', 2);
     $("#portfolio-flters li").removeClass('filter-active');
       $("#kategori2").addClass('filter-active');
   });
-  $(".btn-kategori-3").click(function () {
+  $("#btn-kategori-3").click(function () {
     sessionStorage.setItem('kategori', 3);
     $("#portfolio-flters li").removeClass('filter-active');
       $("#kategori3").addClass('filter-active');
   });
 
-  $(".btn-kategori-4").click(function () {
-    sessionStorage.setItem('kategori', 4);
-    $("#portfolio-flters li").removeClass('filter-active');
-      $("#kategori4").addClass('filter-active');
+  //infopart kismi
+  $(window).scroll(function () {
+    //   $( ".infopartt" ).css( "top", "20%" );
+    // });
+    if ($(this).scrollTop() > 50) {
+      $('.infopartt').css("bottom", "0%");
+    } else {
+      $('.infopartt').css("bottom", "-24%");
+    }
   });
 
-  $(".btn-kategori-5").click(function () {
-    sessionStorage.setItem('kategori', 5);
+
+  $(window).load(function(){
+    $('.infopartt').css("bottom", "-24%");
+  });
+//doviz
+
+$(function(){
+typeof $.fn.paraceviriciWidget == "function" && 
+$("#W7653").paraceviriciWidget({
+	widget:"slideline",
+	wData:{
+		category:1,
+		currency:"USD-EUR-JPY-RUB-CNY-CHF-PKR"
+	},
+	wSize:{
+		wWidth:"100%",
+		wHeight:50
+	},
+	wBase: {
+		wLanguage: "tr"
+	},
+	wColumn: {
+		cL: 1
+	},
+	wContent: {
+		cFlag: 2
+	},
+	wTop: {
+		tStat: 2,
+		tB: "rgba(0,158,232,255)",
+		tT: "Döviz",
+		tC: "#ffffff"
+	},
+	wLeft: {
+		lStat: 3
+	},
+	wCode: {
+		cS: 22
+	},
+	wPrice: {
+		pS: 26,
+		pB: "normal"
+	},
+	wChange: {
+		cS: 15
+	},
+	wArrow: {
+		aS: 11
+	}
+});
+});
+
+
+
+
+//new jquery kod for dropdown
+$(window).on('load', function () {
+
+  if (sessionStorage.kategori == NaN) {
+    sessionStorage.kategori = 1
+  }
+  if (sessionStorage.kategori == 2) {
+    var portfolioIsotope = $('.portfolio-container').isotope({
+      itemSelector: '.portfolio-item'
+    });
+
     $("#portfolio-flters li").removeClass('filter-active');
-      $("#kategori5").addClass('filter-active');
+    $("#kategori2").addClass('filter-active');
+
+    portfolioIsotope.isotope({
+      filter: $("#kategori2").data('filter')
+    });
+    aos_init();
+
+
+    // Initiate venobox (lightbox feature used in portofilo)
+    $(document).ready(function () {
+      $('.venobox').venobox();
+    });
+  }
+  else if (sessionStorage.kategori == 3) {
+    var portfolioIsotope = $('.portfolio-container').isotope({
+      itemSelector: '.portfolio-item'
+    });
+
+    $("#portfolio-flters li").removeClass('filter-active');
+    $("#kategori3").addClass('filter-active');
+
+    portfolioIsotope.isotope({
+      filter: $("#kategori3").data('filter')
+    });
+    aos_init();
+
+
+    // Initiate venobox (lightbox feature used in portofilo)
+    $(document).ready(function () {
+      $('.venobox').venobox();
+    });
+  }
+  else if (sessionStorage.kategori == 4) {
+    var portfolioIsotope = $('.portfolio-container').isotope({
+      itemSelector: '.portfolio-item'
+    });
+
+    $("#portfolio-flters li").removeClass('filter-active');
+    $("#kategori4").addClass('filter-active');
+
+    portfolioIsotope.isotope({
+      filter: $("#kategori4").data('filter')
+    });
+    aos_init();
+
+
+    // Initiate venobox (lightbox feature used in portofilo)
+    $(document).ready(function () {
+      $('.venobox').venobox();
+    });
+  }
+  else if (sessionStorage.kategori == 5) {
+    var portfolioIsotope = $('.portfolio-container').isotope({
+      itemSelector: '.portfolio-item'
+    });
+
+    $("#portfolio-flters li").removeClass('filter-active');
+    $("#kategori5").addClass('filter-active');
+
+    portfolioIsotope.isotope({
+      filter: $("#kategori5").data('filter')
+    });
+    aos_init();
+
+
+    // Initiate venobox (lightbox feature used in portofilo)
+    $(document).ready(function () {
+      $('.venobox').venobox();
+    });
+  }
+  else  {
+    var portfolioIsotope = $('.portfolio-container').isotope({
+      itemSelector: '.portfolio-item'
+    });
+
+    $("#portfolio-flters li").removeClass('filter-active');
+    $("#kategori1").addClass('filter-active');
+
+    portfolioIsotope.isotope({
+      filter: $("#kategori1").data('filter')
+    });
+    aos_init();
+
+
+    // Initiate venobox (lightbox feature used in portofilo)
+    $(document).ready(function () {
+      $('.venobox').venobox();
+    });
+  }
+});
+
+$(window).on('load', function() {
+  var portfolioIsotope = $('.portfolio-container').isotope({
+    itemSelector: '.portfolio-item'
   });
 
+  $('#portfolio-flters li').on('click', function() {
+    $("#portfolio-flters li").removeClass('filter-active');
+    $(this).addClass('filter-active');
+
+    portfolioIsotope.isotope({
+      filter: $(this).data('filter')
+    });
+    aos_init();
+  });
+
+  // Initiate venobox (lightbox feature used in portofilo)
+  $(document).ready(function() {
+    $('.venobox').venobox();
+  });
+});
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+$(".btn-kategori-1").click(function () {
+  sessionStorage.setItem('kategori', 1);
+  $("#portfolio-flters li").removeClass('filter-active');
+    $("#kategori1").addClass('filter-active');
+});
+
+$(".btn-kategori-2").click(function () {
+  sessionStorage.setItem('kategori', 2);
+  $("#portfolio-flters li").removeClass('filter-active');
+    $("#kategori2").addClass('filter-active');
+});
+$(".btn-kategori-3").click(function () {
+  sessionStorage.setItem('kategori', 3);
+  $("#portfolio-flters li").removeClass('filter-active');
+    $("#kategori3").addClass('filter-active');
+});
+
+$(".btn-kategori-4").click(function () {
+  sessionStorage.setItem('kategori', 4);
+  $("#portfolio-flters li").removeClass('filter-active');
+    $("#kategori4").addClass('filter-active');
+});
+
+$(".btn-kategori-5").click(function () {
+  sessionStorage.setItem('kategori', 5);
+  $("#portfolio-flters li").removeClass('filter-active');
+    $("#kategori5").addClass('filter-active');
+});
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+$(window).on('load', function () {
+  var portfolioIsotope = $('.portfolio-container').isotope({
+    itemSelector: '.portfolio-item'
+  });
+
+  $('#urunlerli li').on('click', function () {
+    $("#urunlerli li").removeClass('filter-active');
+    $(this).addClass('filter-active');
+
+    portfolioIsotope.isotope({
+      filter: $(this).data('filter') 
+    });
+    aos_init();
+  });
+
+  // Initiate venobox (lightbox feature used in portofilo)
+  $(document).ready(function () {
+    $('.venobox').venobox();
+  });
+});
 
 })(jQuery);
+
+
+
