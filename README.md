@@ -1,3 +1,1 @@
-# YusufBalikici
-
- https://abdoul2020.github.io/YusufBalikici/
+https://virtualuserx.github.io/balikcisacmetal/
