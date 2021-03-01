@@ -1003,6 +1003,8 @@ object-fit:cover;
 
 #bizeulasın {
   background: url("images/contactkismi.jpg");
+    object-fit:cover;
+  background-size: cover;
 }
 
 #bizeulasın:before {
