@@ -96,7 +96,7 @@ body {
   
   
   
-  @media (min-width: 1500px) {
+  @media (min-width: 1500px){
   
     p {
       font-size: 18px !important;
@@ -110,6 +110,20 @@ body {
   @media (max-width: 350px) {
     #header .container{
       padding-left: 0px;
+    }
+  
+  }
+
+  @media (max-width:766px){
+
+
+    .portfolio-item img{
+      width: 100%;
+    }
+
+    .portfolio-info{
+      width: 80%;
+      margin: auto;
     }
   
   }
