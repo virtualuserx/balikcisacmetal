@@ -40,13 +40,14 @@ body {
     z-index: 9999999;
   }
 
-  /* @media (min-width: 1201px) {
+
+
+  @media (min-width: 1201px) {
     .logopart img {
       height: 45px;
     }
   
-    .logopart img:first-child,
-    h3.logo img {
+    .logopart img:first-child {
       height: 55px;
     }
   
@@ -59,8 +60,7 @@ body {
       height: 35px;
     }
   
-    .logopart img:first-child,
-    h3.logo img {
+    .logopart img:first-child {
       height: 40px;
     }
   
@@ -72,8 +72,7 @@ body {
       height: 35px;
     }
   
-    .logopart img:first-child,
-    h3.logo img {
+    .logopart img:first-child {
       height: 45px;
     }
   
@@ -85,8 +84,7 @@ body {
       height: 25px;
     }
   
-    .logopart img:first-child,
-    h3.logo img {
+    .logopart img:first-child {
       height: 30px;
     }
   
@@ -106,9 +104,16 @@ body {
   
     }
   
-  } */
+  }
 
 
+  @media (max-width: 350px) {
+    #header .container{
+      padding-left: 0px;
+    }
+  
+  }
+  
   /*--------------------------------------------------------------
   # Back to top button
   --------------------------------------------------------------*/
@@ -909,7 +914,7 @@ a#next{
 
   #fotobar .container {
     position: relative;
-    padding-top: 500px;
+   
   }
 
   @media (max-width: 992px) {
@@ -917,6 +922,13 @@ a#next{
       padding-top: 58px;
     }
   }
+
+  @media (max-width: 350px) {
+    #fotobar h2 {
+      font-size: 30px !important;
+    }
+  }
+
 
   #fotobar h1 {
     margin: 0;
@@ -1714,6 +1726,14 @@ section {
   padding: 30px;
 }
 
+@media (max-width: 350px) {
+
+  .contact .php-email-form {
+    padding: 0px;
+  }
+
+}
+
 .contact .php-email-form .validate {
   display: none;
   color: red;
@@ -2165,6 +2185,16 @@ section {
   }
 }
 
+@media (max-width: 350px) {
+
+  
+  #footer .logo img{
+    width: 80%;
+    object-fit: contain;
+  }
+}
+
+
 
 .social-links-2{
   text-align: center;
@@ -2264,4 +2294,157 @@ display: none;
     font-size:14px;
   }
 
+
+/* ABOUT */
+
+#about .about-bar {
+
+  width: 85%;
+  margin: auto;
+  background-color: rgba(144, 145, 148, 1);
+
+}
+
+#about .background-about {
+  background: url(images/urun6.jpg) no-repeat;
+  position: relative;
+  width: 65%;
+  background-size: cover;
+  padding-bottom: 15px;
+}
+
+#about .layer {
+
+  background-color: rgba(144, 145, 148, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+
+
+#about .desc {
+
+  margin-left: 100%;
+  padding-left: 55px;
+  width: 50%;
+
+
+}
+
+
+#about h2 {
+  color: white;
+  text-decoration: underline;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+#about h2:first-child {
+
+  padding-top: 40px;
+
+}
+
+#about p {
+  color: whitesmoke;
+  font-family: Yu Gothic;
+  font-size: 16px;
+
+}
+
+
+@media (max-width: 1350px) {
+
+  #about h2 {
+    font-size: 23px;
+  }
+
+  #about p {
+    font-size: 15px;
+
+  }
+
+}
+
+@media (max-width: 1150px) {
+
+
+
+  #about .background-about {
+    background: url(images/urun6.jpg) no-repeat;
+    position: relative;
+    width: 100%;
+  }
+
+
+  #about .layer {
+
+    background-color: rgba(144, 145, 148, 0.85);
+
+
+  }
+
+  #about .desc {
+    margin: 0;
+    width: 65%;
+  }
+}
+
+
+@media (max-width: 800px) {
+
+  #about .desc {
+    width: 80%;
+
+  }
+
+
+  #about .about-bar {
+
+    background: url(images/urun6.jpg) no-repeat;
+    position: relative;
+    background-size: cover;
+
+  }
+
+  #about .background-about {
+    background: none;
+  }
+}
+
+
+
+@media (max-width: 350px) {
+
+  #about{
+    padding-bottom: 20px;
+  }
+
+
+  #about .about-bar {
+
+    width: 95%;
+    
+  
+  }
+  #about .desc {
+    width: 100%;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  
+  
+  }
+}
+
+
+
+
+
+
+
+/*  */
 
