@@ -993,13 +993,16 @@ a#next{
 /* end of urunfoto */
 
 /* iletisim kismi */
-#bizeulasın {
+#bizeulasın, #fotobar {
   width: 100%;
   height: 95vh;
-  background: url("images/contactkismi.jpg");
 object-fit:cover;
   background-size: cover;
   /* position: relative; */
+}
+
+#bizeulasın {
+  background: url("images/contactkismi.jpg");
 }
 
 #bizeulasın:before {

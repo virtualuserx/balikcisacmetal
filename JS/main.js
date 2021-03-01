@@ -265,10 +265,7 @@ var val123 = 1;
       aos_init();
     });
 
-    // Initiate venobox (lightbox feature used in portofilo)
-    $(document).ready(function () {
-      $('.venobox').venobox();
-    });
+    
   });
 
   // Portfolio details carousel
@@ -417,8 +414,6 @@ $("#W7653").paraceviriciWidget({
 
 
 
-
-//new jquery kod for dropdown
 $(window).on('load', function () {
 
   if (sessionStorage.kategori == NaN) {
@@ -437,13 +432,7 @@ $(window).on('load', function () {
     });
     aos_init();
 
-
-    // Initiate venobox (lightbox feature used in portofilo)
-    $(document).ready(function () {
-      $('.venobox').venobox();
-    });
-  }
-  else if (sessionStorage.kategori == 3) {
+  } else if (sessionStorage.kategori == 3) {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item'
     });
@@ -457,12 +446,7 @@ $(window).on('load', function () {
     aos_init();
 
 
-    // Initiate venobox (lightbox feature used in portofilo)
-    $(document).ready(function () {
-      $('.venobox').venobox();
-    });
-  }
-  else if (sessionStorage.kategori == 4) {
+  } else if (sessionStorage.kategori == 4) {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item'
     });
@@ -476,12 +460,8 @@ $(window).on('load', function () {
     aos_init();
 
 
-    // Initiate venobox (lightbox feature used in portofilo)
-    $(document).ready(function () {
-      $('.venobox').venobox();
-    });
-  }
-  else if (sessionStorage.kategori == 5) {
+
+  } else if (sessionStorage.kategori == 5) {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item'
     });
@@ -494,13 +474,7 @@ $(window).on('load', function () {
     });
     aos_init();
 
-
-    // Initiate venobox (lightbox feature used in portofilo)
-    $(document).ready(function () {
-      $('.venobox').venobox();
-    });
-  }
-  else  {
+  } else {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item'
     });
@@ -513,13 +487,9 @@ $(window).on('load', function () {
     });
     aos_init();
 
-
-    // Initiate venobox (lightbox feature used in portofilo)
-    $(document).ready(function () {
-      $('.venobox').venobox();
-    });
   }
 });
+
 
 $(window).on('load', function() {
   var portfolioIsotope = $('.portfolio-container').isotope({
@@ -545,32 +515,77 @@ $(window).on('load', function() {
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 $(".btn-kategori-1").click(function () {
+
   sessionStorage.setItem('kategori', 1);
+
+  var portfolioIsotope = $('.portfolio-container').isotope({
+    itemSelector: '.portfolio-item'
+  });
   $("#portfolio-flters li").removeClass('filter-active');
-    $("#kategori1").addClass('filter-active');
+  $("#kategori1").addClass('filter-active');
+  portfolioIsotope.isotope({
+    filter: $("#kategori1").data('filter')
+  });
+  aos_init();
 });
 
 $(".btn-kategori-2").click(function () {
+
   sessionStorage.setItem('kategori', 2);
+
+  var portfolioIsotope = $('.portfolio-container').isotope({
+    itemSelector: '.portfolio-item'
+  });
   $("#portfolio-flters li").removeClass('filter-active');
-    $("#kategori2").addClass('filter-active');
+  $("#kategori2").addClass('filter-active');
+  portfolioIsotope.isotope({
+    filter: $("#kategori2").data('filter')
+  });
+  aos_init();
 });
 $(".btn-kategori-3").click(function () {
+
   sessionStorage.setItem('kategori', 3);
+
+  var portfolioIsotope = $('.portfolio-container').isotope({
+    itemSelector: '.portfolio-item'
+  });
   $("#portfolio-flters li").removeClass('filter-active');
-    $("#kategori3").addClass('filter-active');
+  $("#kategori3").addClass('filter-active');
+  portfolioIsotope.isotope({
+    filter: $("#kategori3").data('filter')
+  });
+  aos_init();
 });
 
 $(".btn-kategori-4").click(function () {
+
   sessionStorage.setItem('kategori', 4);
+
+  var portfolioIsotope = $('.portfolio-container').isotope({
+    itemSelector: '.portfolio-item'
+  });
   $("#portfolio-flters li").removeClass('filter-active');
-    $("#kategori4").addClass('filter-active');
+  $("#kategori4").addClass('filter-active');
+  portfolioIsotope.isotope({
+    filter: $("#kategori4").data('filter')
+  });
+  aos_init();
 });
 
 $(".btn-kategori-5").click(function () {
+
   sessionStorage.setItem('kategori', 5);
+
+  var portfolioIsotope = $('.portfolio-container').isotope({
+    itemSelector: '.portfolio-item'
+  });
   $("#portfolio-flters li").removeClass('filter-active');
-    $("#kategori5").addClass('filter-active');
+  $("#kategori5").addClass('filter-active');
+  portfolioIsotope.isotope({
+    filter: $("#kategori5").data('filter')
+  });
+  aos_init();
 });
 
 
