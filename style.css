@@ -44,11 +44,11 @@ body {
 
   @media (min-width: 1201px) {
     .logopart img {
-      height: 45px;
+      height: 40px;
     }
   
     .logopart img:first-child {
-      height: 55px;
+      height: 50px;
     }
   
   
@@ -56,8 +56,10 @@ body {
   
   
   @media (max-width: 1200px) {
+
+
     .logopart img {
-      height: 35px;
+      height: 30px;
     }
   
     .logopart img:first-child {
@@ -68,12 +70,13 @@ body {
   }
   
   @media (max-width: 1000px) {
+  
     .logopart img {
-      height: 35px;
+      height: 30px;
     }
   
     .logopart img:first-child {
-      height: 45px;
+      height: 40px;
     }
   
   
