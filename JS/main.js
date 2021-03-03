@@ -223,10 +223,7 @@ var val123 = 1;
         src: "images/metal2.jpg"
       },
       {
-        src: "images/metalport3.jpg"
-      },
-      {
-        src: "images/urun6.jpg"
+        src: "images/me4.jpg"
       },
       {
         src: "images/shutterstock_1839722281.jpg"
