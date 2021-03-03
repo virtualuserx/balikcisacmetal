@@ -253,7 +253,8 @@ var val123 = 1;
   $(window).load(function(){
     if ($(this).scrollTop() > 100) {
       $('.nav-itemabout').css("color", "black");
-    } else {
+    } 
+    else {
       $('.nav-itemabout').css("color", "white");
     }
   });
