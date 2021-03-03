@@ -805,10 +805,27 @@ a#next{
   transition-delay: 1s;
 } */
 .infopartt h1 {
-  font-size: 50px;
+  font-size: 55px;
+  font-family: "Tee Franklin Forever Round", Helvetica, Arial, sans-serif;
+  line-height:55px;
+  letter-spacing:1px;
+  margin:0px 0px 27.5px;
+  vertical-align:baseline;
+  font-weight:500;
+  text-decoration:none solid rgb(255, 255, 255);
+  text-align:start;
+
 }
 
-.infopartt p {}
+.infopartt p {
+  font-family: "Tee Franklin Forever", Helvetica, Arial, sans-serif;
+  font-size:18px;
+  line-height:21.6px;
+  vertical-align:baseline;
+  font-weight:300;
+  text-decoration:none solid rgb(255, 255, 255);
+  text-align:start;
+}
 
 /* .infopartt::-webkit-scrollbar-thumb{
   background-color:red;
@@ -922,7 +939,7 @@ a#next{
 
   #fotobar:before {
     content: "";
-    /* background: rgba(255, 255, 255, 0.2); */
+    background: rgba(25, 25, 25, 0.3);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -1286,7 +1303,8 @@ section {
 
   .featured-services .icon-box:hover::before {
     /* background: #106eea; */
-    background: #C1C3C4;
+    /* background: #C1C3C4; */
+    background: rgba(0,158,232,255);
     top: 0;
     border-radius: 0px;
   }
