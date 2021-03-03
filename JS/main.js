@@ -250,7 +250,7 @@ var val123 = 1;
 
   // Porfolio isotope and filter
 
-  $(window).load(function(){
+  $(window).on(function(){
     if ($(this).scrollTop() > 100) {
       $('.nav-itemabout').css("color", "black");
     } 
