@@ -250,6 +250,13 @@ var val123 = 1;
 
   // Porfolio isotope and filter
 
+  $(window).load(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.nav-itemabout').css("color", "black");
+    } else {
+      $('.nav-itemabout').css("color", "white");
+    }
+  });
 
   // Porfolio isotope and filter
   $(window).on('load', function () {
