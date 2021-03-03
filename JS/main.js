@@ -635,8 +635,9 @@ $(window).on('load', function () {
 
 })(jQuery);
 
-function scrollTo(hash) {
-  location.hash = "#" + hash;
-}
+// function scrollTo(hash) {
+//   location.hash = "#" + hash;
+// }
+
 
 
