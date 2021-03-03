@@ -201,9 +201,11 @@ var val123 = 1;
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
       $('#topbar').addClass('topbar-scrolled');
+      $('.nav-itemabout').css("color", "black");
     } else {
       $('#header').removeClass('header-scrolled');
       $('#topbar').removeClass('topbar-scrolled');
+      $('.nav-itemabout').css("color", "white");
     }
   });
 
@@ -620,6 +622,7 @@ $(window).on('load', function () {
     loop: true,
     items: 1
   });
+
 
 
 })(jQuery);
