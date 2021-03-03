@@ -225,6 +225,9 @@ var val123 = 1;
       {
         src: "images/me4.jpg"
       },
+	     {
+        src: "images/bato.jpg"
+      },
       {
         src: "images/shutterstock_1839722281.jpg"
       }
