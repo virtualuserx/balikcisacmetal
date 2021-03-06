@@ -231,7 +231,7 @@ var val123 = 1;
         src: "images/bato.jpg"
       },
       {
-        src: "images/shutterstock_1839722281.jpg"
+        src: "images/Dekoratif-Paslanmaz.jpg"
       }
     ],
 
