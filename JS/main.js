@@ -246,6 +246,7 @@ var val123 = 1;
         src: "images/Dekoratif-Paslanmaz.jpg"
       }
     ],
+	  
 
   });
 
