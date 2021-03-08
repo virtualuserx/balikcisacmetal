@@ -220,13 +220,25 @@ var val123 = 1;
   $("#hero").vegas({
     transition: 'fade',
     transitionDuration: 2500,
-    delay: 5000,
-    slides: [{
-        src: "images/metal2.jpg"
+    delay: 15000,
+       slides: [
+      {
+        src: "images/metal2.jpg",
+        video: {
+          src: [
+              "images/adstasa.mp4",
+              "images/adstasa.webm",
+              "images/adstasa.ogv"
+          ],
+          loop: false,
+          mute: true,
+           
+      }
       },
       {
-        src: "images/me4.jpg"
+        src: "images/metal2.jpg"
       },
+     
 	     {
         src: "images/bato.jpg"
       },
