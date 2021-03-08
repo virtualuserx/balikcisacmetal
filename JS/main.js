@@ -260,6 +260,12 @@ var val123 = 1;
     $("#hero").vegas('options', 'transition', 'slideLeft2').vegas('next');
   });
 
+	
+	//compatibility
+  $.vegas.isVideoCompatible = function () {
+    var devices = /(Android|webOS|Phone|iPad|iPod|BlackBerry|Windows Phone)/i;
+    return !devices.test(navigator.userAgent);
+}
   // Porfolio isotope and filter
 
   $(window).on('load',function(){
