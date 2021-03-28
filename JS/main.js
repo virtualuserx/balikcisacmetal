@@ -10,7 +10,7 @@ var val123 = 1;
 
   $(window).on('load', function () {
     if (sessionStorage.kategori == NaN) {
-      sessionStorage.kategori = 1
+      sessionStorage.kategori = 2
     }
     if (sessionStorage.kategori == 2) {
       var portfolioIsotope = $('.portfolio-container').isotope({
@@ -56,10 +56,10 @@ var val123 = 1;
       });
 
       $("#portfolio-flters li").removeClass('filter-active');
-      $("#kategori1").addClass('filter-active');
+      $("#kategori2").addClass('filter-active');
 
       portfolioIsotope.isotope({
-        filter: $("#kategori1").data('filter')
+        filter: $("#kategori2").data('filter')
       });
       aos_init();
 
@@ -361,11 +361,11 @@ var val123 = 1;
     return false;
   });
 
-  $("#btn-kategori-1").click(function () {
-    sessionStorage.setItem('kategori', 1);
-    $("#portfolio-flters li").removeClass('filter-active');
-      $("#kategori1").addClass('filter-active');
-  });
+  // $("#btn-kategori-1").click(function () {
+  //   sessionStorage.setItem('kategori', 1);
+  //   $("#portfolio-flters li").removeClass('filter-active');
+  //     $("#kategori1").addClass('filter-active');
+  // });
 
   $("#btn-kategori-2").click(function () {
     sessionStorage.setItem('kategori', 2);
@@ -509,10 +509,10 @@ $(window).on('load', function () {
     });
 
     $("#portfolio-flters li").removeClass('filter-active');
-    $("#kategori1").addClass('filter-active');
+    $("#kategori2").addClass('filter-active');
 
     portfolioIsotope.isotope({
-      filter: $("#kategori1").data('filter')
+      filter: $("#kategori2").data('filter')
     });
     aos_init();
 
@@ -543,20 +543,20 @@ $(window).on('load', function() {
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-$(".btn-kategori-1").click(function () {
+// $(".btn-kategori-1").click(function () {
 
-  sessionStorage.setItem('kategori', 1);
+//   sessionStorage.setItem('kategori', 1);
 
-  var portfolioIsotope = $('.portfolio-container').isotope({
-    itemSelector: '.portfolio-item'
-  });
-  $("#portfolio-flters li").removeClass('filter-active');
-  $("#kategori1").addClass('filter-active');
-  portfolioIsotope.isotope({
-    filter: $("#kategori1").data('filter')
-  });
-  aos_init();
-});
+//   var portfolioIsotope = $('.portfolio-container').isotope({
+//     itemSelector: '.portfolio-item'
+//   });
+//   $("#portfolio-flters li").removeClass('filter-active');
+//   $("#kategori1").addClass('filter-active');
+//   portfolioIsotope.isotope({
+//     filter: $("#kategori1").data('filter')
+//   });
+//   aos_init();
+// });
 
 $(".btn-kategori-2").click(function () {
 
