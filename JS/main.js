@@ -183,6 +183,9 @@ var val123 = 1;
       $(this).parent().toggleClass('active');
     });
 
+    $('.drop-down').removeClass('drop-down');
+
+
     $(document).click(function (e) {
       var container = $(".mobile-nav, .mobile-nav-toggle");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
