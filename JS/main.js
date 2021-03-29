@@ -183,7 +183,7 @@ var val123 = 1;
       $(this).parent().toggleClass('active');
     });
 
-    $('.drop-down').removeClass('drop-down');
+    
 
 
     $(document).click(function (e) {
